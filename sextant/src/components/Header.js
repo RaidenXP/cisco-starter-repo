@@ -1,8 +1,8 @@
-export default function Header(){
+export default function Header({ content }){
     return(
         <>
             <h2>
-                Header here
+                {content}
             </h2>
         </>
     );

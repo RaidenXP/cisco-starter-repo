@@ -1,8 +1,8 @@
-export default function Content(){
+export default function Content({ content }){
     return(
         <>
             <p>
-                Blah Blah Blah Blah Blah
+                {content}
             </p>
         </>
     );
