@@ -9,7 +9,9 @@ export default function WebSocket(){
         let ignore = false
         setLat(null)
         client.onmessage = (message) => {
-            setLat(new Date().getTime() - message.data)
+            if(!ignore){
+                setLat(new Date().getTime() - message.data)
+            }
         };
 
         return () => {
