@@ -2,6 +2,7 @@ import Banner from '../components/Banner';
 import Card from '../components/Card';
 import Header from '../components/Header';
 import Address from '../components/Address';
+import WebSocket from '../components/WebSocket';
 
 export default function MainPage(){
     return(
@@ -22,6 +23,12 @@ export default function MainPage(){
                 <Address
                     url='https://api64.ipify.org?format=json'
                 />
+            </Card>
+            <Card>
+                <Header
+                    content='Latency'
+                />
+                <WebSocket/>
             </Card>
         </>
     );
